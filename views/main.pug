@@ -1,0 +1,40 @@
+html
+    head
+        title Model Variant
+
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css", integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r", crossorigin="anonymous")
+        link(rel="stylesheet", href="./style.css")
+        
+        script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+    
+
+    body.container
+        div.panel
+        div.row
+                img(src="hyundai.jpg", alt="hyundai logo")        
+                
+                hr
+        div.row
+            div.col-sm-3
+                form(onchange="selectVal()")
+                    select.form-control#val(size=11)
+                        option(value="eon") Eon
+                        option(value="i10") Grand i10 
+                        option(value="i20") Elite i20
+                        option(value="i20_act") Active i20 
+                        option(disabled)
+                        
+                        option(value="xcent") Xcent
+                        option(value="verna") Verna
+                        option(value="elantra") Elantra
+                        option(disabled)
+
+                        option(value="creta") Creta
+                        option(value="tucson") Tucson
+            div.col-sm-3
+            div.col-sm-6    
+
+                ul#variant.list-group
+        script(src="./script.js")
