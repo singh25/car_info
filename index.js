@@ -8,4 +8,4 @@ app.use(express.static('resources'))
 app.get('/', (req, res)=> res.render("main"));
 
 
-app.listen(3000, console.log("Running on port 3000"));
+app.listen(8080, console.log("Running on port 8080"));
