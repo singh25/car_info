@@ -7,4 +7,4 @@ app.use(express.static('resources'))
 app.get('/', (req, res)=> res.render("main"));
 
 
-app.listen(8080, console.log("Running on port gagan"));
+app.listen(process.env.PORT);
